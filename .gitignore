@@ -1,0 +1,17 @@
+# CMake build output
+build/
+out/
+cmake-build-*/
+
+# Projucer-generated (not used by this CMake build)
+Builds/
+JuceLibraryCode/
+
+# IDE / OS cruft
+.vs/
+.idea/
+.DS_Store
+
+# Built plugin binaries
+*.vst3
+*.component
