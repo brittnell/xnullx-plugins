@@ -43,3 +43,11 @@ Validate the AU with: `auval -v aufx <PluginCode> XNLX` (use `aumu` for Bunka, t
   so the macOS builds share identity with the Windows builds.
 - For distribution, macOS builds should be code-signed and notarized
   (an Apple Developer account is required for that).
+
+## License
+
+This plugin source is released under the [MIT License](LICENSE) — © 2026 XNULLX.
+
+The JUCE framework, downloaded separately at build time, is covered by its own
+license terms (see [juce.com](https://juce.com)).
+
