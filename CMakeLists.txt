@@ -20,7 +20,8 @@ FetchContent_Declare(JUCE
     GIT_SHALLOW    TRUE)
 FetchContent_MakeAvailable(JUCE)
 
-# ── The three plugins ─────────────────────────────────────────────────────────
+# ── The four plugins ──────────────────────────────────────────────────────────
 add_subdirectory(GrainBrain)
 add_subdirectory(O2)
 add_subdirectory(Bunka)
+add_subdirectory(Foldspace)

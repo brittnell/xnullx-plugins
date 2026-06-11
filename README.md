@@ -1,12 +1,13 @@
 # XNULLX Plugins
 
-Source + CMake build for three XNULLX audio plugins (JUCE):
+Source + CMake build for four XNULLX audio plugins (JUCE):
 
 | Plugin | Type | Formats |
 | --- | --- | --- |
 | **GrainBrain** | Multiband granular processor (FX) | VST3, AU |
 | **O2** | 3-band saturation & width (FX) | VST3, AU |
 | **Bunka** | Beat-slicer sampler (Instrument) | VST3, AU |
+| **Foldspace** | Phase modulation x wavefolding (FX, accepts MIDI) | VST3, AU |
 
 Built and shipped on Windows (VST3). This repo exists to build the macOS
 versions (VST3 + AU) from the same source.
@@ -35,12 +36,13 @@ After a successful build, the bundles are under `build/<Plugin>/<Plugin>_artefac
 - macOS VST3 → `.../VST3/<Plugin>.vst3`  → copy to `~/Library/Audio/Plug-Ins/VST3/`
 - macOS AU   → `.../AU/<Plugin>.component` → copy to `~/Library/Audio/Plug-Ins/Components/`
 
-Validate the AU with: `auval -v aufx <PluginCode> XNLX` (use `aumu` for Bunka, the instrument).
+Validate the AU with: `auval -v aufx <PluginCode> XNLX` (use `aumu` for Bunka, the
+instrument, and `aumf` for Foldspace, an effect that accepts MIDI).
 
 ## Notes
 
-- Plugin/manufacturer codes are fixed (`XNLX`; GrainBrain `Cl7u`, O2 `O2XN`, Bunka `Bnka`)
-  so the macOS builds share identity with the Windows builds.
+- Plugin/manufacturer codes are fixed (`XNLX`; GrainBrain `Cl7u`, O2 `O2XN`, Bunka `Bnka`,
+  Foldspace `Flds`) so the macOS builds share identity with the Windows builds.
 - For distribution, macOS builds should be code-signed and notarized
   (an Apple Developer account is required for that).
 
